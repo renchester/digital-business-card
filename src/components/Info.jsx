@@ -1,16 +1,19 @@
 import iconLinkedIn from '../assets/icon-linkedin.png';
 import iconMail from '../assets/icon-mail.png';
+import profile from '../assets/profile-img.png';
 
 function Info() {
   return (
     <main className="info__container">
       <div className="info__img-wrapper">
-        <img src="info__main-img" alt="" />
+        <img src={profile} className="info__img-profile" alt="" />
       </div>
       <section className="info__details">
-        <h1 className="info__name">Laura Smith</h1>
-        <h5 className="info__job-position">Frontend Developer</h5>
-        <a href="#">Website.com</a>
+        <h1 className="info__name">Avatar Aang</h1>
+        <h5 className="info__job-position">Master of all Four Elements</h5>
+        <a href="#" className="info__website">
+          thelastairbender.fake.com
+        </a>
 
         <div className="info__btn-container">
           <button type="button" className="btn-email">

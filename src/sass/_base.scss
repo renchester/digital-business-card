@@ -60,15 +60,13 @@ table {
   box-sizing: border-box;
 }
 
-/* */
-
-body {
+:root {
   /* COLOR VARIABLES */
 
-  --color-primary: #2f3297;
-  --color-accent: #3f44de;
+  --color-primary: #e98b20;
+  --color-accent: #f3c086;
 
-  --color-background: #fffef9;
+  --color-background: #464646;
   --color-background-dark: #353535;
   --color-light-1: #fff9f9;
   --color-light-2: #f0f0f0;
@@ -109,10 +107,12 @@ body {
   --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
 }
 
-body.dark-mode {
-  --color-background: var(--color-background-dark, #353535);
-  --color-text: var(--color-text-light, white);
+#root {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
 
-  --color-primary: #8a27c4;
-  --color-accent: #9640c7;
+  background-color: var(--color-background);
+  color: var(--color-text-light);
+  font-family: var(--font-inter);
 }
